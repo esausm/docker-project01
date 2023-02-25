@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+	<style>
+		/* Define some styles for the page */
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		.card {
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			margin-bottom: 20px;
+			padding: 20px;
+		}
+
+		.card h2 {
+			margin-top: 0;
+		}
+
+		.btn {
+			background-color: #333;
+			border-radius: 5px;
+			color: #fff;
+			display: inline-block;
+			margin: 10px;
+			padding: 10px 20px;
+			text-decoration: none;
+		}
+
+		.btn:hover {
+			background-color: #555;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<h1>Hello World</h1>
+	</header>
+	<div class="container">
+		<div class="card">
+			<h2>JavaScript</h2>
+			<p>JavaScript is a programming language that is commonly used for web development. It allows you to create dynamic and interactive web pages.</p>
+			<a href="#" class="btn">Learn More</a>
+		</div>
+		<div class="card">
+			<h2>CSS</h2>
+			<p>CSS is a styling language that is used to define the visual appearance of web pages. It allows you to create beautiful and responsive designs.</p>
+			<a href="#" class="btn">Learn More</a>
+		</div>
+	</div>
+	<script>
+		// Add some dynamic behavior to the page using JavaScript
+		const btns = document.querySelectorAll('.btn');
+		btns.forEach(btn => {
+			btn.addEventListener('click', e => {
+				e.preventDefault();
+				alert('You clicked the ' + btn.innerText + ' button!');
+			});
+		});
+	</script>
+</body>
+</html>
